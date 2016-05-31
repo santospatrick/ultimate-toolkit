@@ -1,6 +1,6 @@
 # CONTRIBUTE & DO CLONE, COMMIT, PULL, PULL REQUEST, MERGE, PUSH
 
-## This is Gulpack v1! A Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
+> This is Gulpack v1! A Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
 
 ### Getting Started
 
