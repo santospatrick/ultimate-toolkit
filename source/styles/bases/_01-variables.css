@@ -1,0 +1,56 @@
+:root{
+
+  /* Colors */
+  --brand-primary    : rgba(33, 150, 243, 1);
+  --brand-secundary  : rgba(244, 67, 54, 1);
+  --brand-tertiary   : rgba(255, 193, 7, 1);
+  --brand-quaternary : rgba(76, 175, 80, 1);
+
+  /* Grays */
+  --gray-nude  : #f1f1f1;
+  --gray-light : #ececec;
+  --gray-base  : #bdbdbd;
+  --gray-dark  : #616161;
+
+  /* Spaces */
+  --space-small  : 10px;
+  --space-base   : 20px;
+  --space-large  : 25px;
+
+  /* Sizes */
+  --size-small  : .8em;
+  --size-base   : 1em;
+  --size-medium : 1.2em;
+  --size-large  : 2em;
+
+  /* Fonts */
+  --font-base: 'roboto';
+  --font-icon: 'icomoon';
+
+  /* Weights */
+  --weight-light : 200;
+  --weight-base  : 400;
+  --weight-bold  : 700;
+
+  /* Lines */
+  --line-base : 1;
+  --line-text : 1.4;
+
+  /* Letter Spacing */
+  --spacing-base: .5px;
+
+  /* Radius */
+  --radius-base: 2px;
+
+  /* Transitions */
+  --transition-slow : all .3s ease-out;
+  --transition-base : all .25s ease-out;
+  --transition-fast : all .05s ease-out;
+
+  /* Shadows */
+  --shadow-base      : 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  --shadow-highlight : 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+
+}
+
+@lost gutter 20px;

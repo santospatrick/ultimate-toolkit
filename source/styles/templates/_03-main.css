@@ -1,0 +1,5 @@
+@media(--screen-medium){
+  .main-home{
+    padding-bottom: 70px; /* Footer Height */
+  }  
+}

@@ -1,0 +1,17 @@
+.footer-home{
+  width            : 100%;
+  box-sizing       : border-box;
+  background-color : var(--gray-base);
+  padding          : var(--space-large) 0;
+  text-align       : center;
+  color            : var(--gray-dark);
+}
+
+@media (--screen-medium){
+  .footer-home{
+    position : absolute;
+    left     : 0;
+    bottom   : 0;
+    height   : 70px;
+  }
+}

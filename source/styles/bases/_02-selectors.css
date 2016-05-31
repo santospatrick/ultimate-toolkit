@@ -1,0 +1,8 @@
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--btn a.btn, button, input[type=submit];
+@custom-selector :--icon i[class^='icon-'], i[class*=' icon-'];
+@custom-selector :--over :hover, :focus, :active, .active;
+@custom-selector :--alert [class^='alert-'], [class*=' alert-'];
+@custom-selector :--grid [class^='grid-'], [class*=' grid-'];
+@custom-selector :--field input[type='text'], textarea, select;
+@custom-selector :--options input[type='checkbox'], input[type='radio'];

@@ -1,0 +1,26 @@
+:--btn{
+  position         : relative;
+  display          : inline-block;
+  box-sizing       : border-box;
+  height           : 36px;
+  width            : auto;
+  border           : 0;
+  outline-width    : 0;
+  padding          : 0 calc(var(--space-base)*2);
+  margin-bottom    : var(--space-base);
+  box-shadow       : var(--shadow-base);
+  letter-spacing   : var(--spacing-base);
+  background-color : var(--gray-light);
+  text-transform   : uppercase;
+  vertical-align   : middle;
+  cursor           : pointer;
+  overflow         : hidden;
+  transition       : var(--transition-base);
+  text-align       : center;
+  border-radius    : var(--radius-base);
+  color            : #fff;
+}
+
+:--btn:--over{
+  box-shadow: var(--shadow-highlight); 
+}

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: var(--font-base);
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: var(--weight-base);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: var(--font-base);
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: var(--weight-light);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: var(--font-base);
+    src: url('../fonts/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: var(--weight-bold);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: var(--font-icon);
+    src: url('../fonts/icomoon.eot?p6w75j');
+    src: url('../fonts/icomoon.eot?p6w75j#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon.ttf?p6w75j') format('truetype'),
+         url('../fonts/icomoon.woff?p6w75j') format('woff'),
+         url('../fonts/icomoon.svg?p6w75j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,
+body{
+  font-family: var(--font-base);
+  font-weight: var(--weight-base);
+}
+
+p{
+  margin-bottom: var(--space-base);
+}
+
+hr{
+  background-color: var(--gray-light);
+}
+
+a{
+  text-decoration : none;
+  color           : var(--brand-primary);
+  transition      : var(--transition-base);
+}
+
+a:--over{
+  color: color(var(--brand-primary) lightness(40%));
+}

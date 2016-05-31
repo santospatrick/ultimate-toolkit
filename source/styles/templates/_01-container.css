@@ -1,0 +1,23 @@
+.container{
+  lost-center: 100%;
+  padding-right: var(--space-base);
+  padding-left: var(--space-base);
+}
+
+@media (--screen-small){
+  .container{
+    lost-center: 768px;
+  }
+}
+
+@media (--screen-medium){
+  .container{
+    lost-center: 992px;
+  }
+}
+
+@media (--screen-large){
+  .container{
+    lost-center: 1200px;
+  }
+}
