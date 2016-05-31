@@ -1,23 +1,23 @@
 # CONTRIBUTE & DO CLONE, COMMIT, PULL, PULL REQUEST, MERGE, PUSH
 
-# This is Gulpack v1! A Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
+## This is Gulpack v1! A Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
 
-# Getting Started
+### Getting Started
 
 1. Install node.js
-2. "npm install --global gulp webpack" in your command line
-3. "npm install" in your command line to install packages
-4. Erase line 2 on "scripts/home.js"
-5. Erase line 1 "styles/pages/_pages.css"
-6. Delete "styles/pages/_01-home.css"
-7. "gulp" in your command line to start watching your "/source" file changes!
+2. **"npm install --global gulp webpack"** in your command line
+3. **"npm install"** in your command line to install packages
+4. Erase line 2 on **"scripts/home.js"**
+5. Erase line 1 **"styles/pages/_pages.css"**
+6. Delete **"styles/pages/_01-home.css"**
+7. **"gulp"** in your command line to start watching your **"/source"** file changes!
 8. Enjoy it! :wink:
 
-# Production Build
+### Production Build
 
-Use **gulp production**
+Use **"gulp production"**
 
-# Browser Support
+### Browser Support
 
 * Chrome 26
 * IE 10
@@ -25,7 +25,7 @@ Use **gulp production**
 * Safari 5.1
 * Opera 11.1
 
-# Gulp Packages
+### Gulp Packages
 
 * gulp-cache
 * gulp-imagemin
@@ -33,7 +33,7 @@ Use **gulp production**
 * gulp-postcss
 * gulp-sourcemaps
 
-# Webpack Packages
+### Webpack Packages
 
 * webpack
 * webpack-stream
@@ -42,7 +42,7 @@ Use **gulp production**
 * babel-preset-es2015
 * jquery
 
-# Postcss Packages
+### Postcss Packages
 
 * cssnano
 * lost
@@ -54,7 +54,7 @@ Use **gulp production**
 * postcss-partial-import
 * postcss-color-function
 
-# Server Packages
+### Server Packages
 
 * browser-sync
 * ngrok
