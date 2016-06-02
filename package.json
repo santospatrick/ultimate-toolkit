@@ -4,7 +4,8 @@
   "description": "We are using Postcss & Babel",
   "main": "index.js",
   "scripts": {
-    "start": "echo welcome to gulpack v1!"
+    "start": "echo welcome to gulpack v1!",
+    "build": "gulp production && webpack -p",
   },
   "author": "Patrick Santos",
   "license": "MIT",

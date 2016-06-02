@@ -1,31 +1,24 @@
-# CONTRIBUTE & DO CLONE, COMMIT, PULL, PULL REQUEST, MERGE, PUSH
+# Gulpack
 
-> This is Gulpack v1! A Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
+> This is a Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
 
-### Getting Started
+![Gulpack S2](public/images/presentation.jpg?raw=true "Gulpack S2")
 
-1. Install node.js
-2. **"npm install --global gulp webpack"** in your command line
-3. **"npm install"** in your command line to install packages
-4. Erase line 2 on **"scripts/home.js"**
-5. Erase line 1 **"styles/pages/_pages.css"**
-6. Delete **"styles/pages/_01-home.css"**
-7. **"gulp"** in your command line to start watching your **"/source"** file changes!
-8. Enjoy it! :wink:
+## Getting Started
 
-### Production Build
+1. `git clone` this repo
+2. Install [node.js](https://nodejs.org/en/download/)
+3. `npm install --global gulp` in your command line
+4. `npm install` to install dependencies
+5. `gulp` to start watching your **/source** file changes!
+6. It will pop up a new tab in your default browser with our **awesome showcase page**
+7. Enjoy it! :wink:
 
-Use **"gulp production"**
+## Production Build
 
-### Browser Support
+Run `npm run build` to deploy minified css & javascript
 
-* Chrome 26
-* IE 10
-* Firefox 3.6
-* Safari 5.1
-* Opera 11.1
-
-### Gulp Packages
+## Gulp Packages
 
 * gulp-cache
 * gulp-imagemin
@@ -33,7 +26,7 @@ Use **"gulp production"**
 * gulp-postcss
 * gulp-sourcemaps
 
-### Webpack Packages
+## Webpack Packages
 
 * webpack
 * webpack-stream
@@ -42,7 +35,7 @@ Use **"gulp production"**
 * babel-preset-es2015
 * jquery
 
-### Postcss Packages
+## Postcss Packages
 
 * cssnano
 * lost
@@ -54,7 +47,27 @@ Use **"gulp production"**
 * postcss-partial-import
 * postcss-color-function
 
-### Server Packages
+## Server Packages
 
 * browser-sync
 * ngrok
+
+## Browser Support
+
+* Chrome 26
+* IE 10
+* Firefox 3.6
+* Safari 5.1
+* Opera 11.1
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :smile:
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT)
