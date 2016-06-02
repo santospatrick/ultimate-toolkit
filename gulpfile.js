@@ -126,4 +126,4 @@ gulp.task('watch', ['browsersync', 'styles', 'webpack', 'fonts', 'images'], func
 });
 
 gulp.task('default', ['watch']);
-gulp.task('production', ['styles', 'webpack', 'fonts', 'images']);
+gulp.task('production', ['styles', 'fonts', 'images']);
