@@ -8,7 +8,7 @@
 
 1. `git clone` this repo
 2. Install [node.js](https://nodejs.org/en/download/)
-3. `npm install --global gulp` in your command line
+3. `npm install --global gulp webpack` in your command line
 4. `npm install` to install dependencies
 5. `gulp` to start watching your **/source** file changes!
 6. It will pop up a new tab in your default browser with our **awesome showcase page**
