@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate-gulp-webpack",
+  "name": "gulpack",
   "version": "1.0.0",
-  "description": "We are using Postcss & Babel",
+  "description": "This is a Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!",
   "main": "index.js",
   "scripts": {
-    "start": "echo welcome to gulpack v1!",
+    "start": "echo welcome to gulpack!",
     "build": "gulp production && webpack -p"
   },
   "author": "Patrick Santos",
