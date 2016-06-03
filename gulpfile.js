@@ -29,6 +29,12 @@ var reload       = browsersync.reload;
 var connect_port = 8888;
 var ngrok        = require('ngrok');
 
+// Prevent gulp from stop running on css syntax error
+function handleError(err) {
+  console.log(err.toString());
+  this.emit('end');
+}
+
 // Environment Variables
 var src        = 'source/';
 var dest       = 'public/';
@@ -59,7 +65,21 @@ var processors = [
   lost,
   colors,
   nano({
-    autoprefixer: {browsers: ['> 1%', 'last 2 versions', 'Firefox >= 20'], add: true}
+    autoprefixer: { browsers: [
+      'Android >= 2.3',
+      'BlackBerry >= 7',
+      'Chrome >= 9',
+      'Firefox >= 4',
+      'Explorer >= 9',
+      'iOS >= 5',
+      'Opera >= 11',
+      'Safari >= 5',
+      'OperaMobile >= 11',
+      'OperaMini >= 6',
+      'ChromeAndroid >= 9',
+      'FirefoxAndroid >= 4',
+      'ExplorerMobile >= 9'
+    ]}
   })
 ];
 
@@ -67,6 +87,7 @@ gulp.task('styles', function(){
   return gulp.src(src_css + '/style.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
+    .on('error', handleError)
     .pipe(sourcemaps.write('map'))
     .pipe(gulp.dest(dest_css))
 });
@@ -117,7 +138,7 @@ gulp.task('domain', function(){
   }, function (err, url) {});
 })
 
-gulp.task('watch', ['browsersync', 'styles', 'webpack', 'fonts', 'images'], function(){
+gulp.task('watch', ['browsersync'], function(){
   gulp.watch(wtc_css, ['styles', reload]);
   gulp.watch(wtc_js, ['webpack', reload]);
   gulp.watch(wtc_fonts, ['fonts', reload]);
