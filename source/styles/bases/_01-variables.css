@@ -24,7 +24,7 @@
   --size-large  : 2em;
 
   /* Fonts */
-  --font-base: 'roboto';
+  --font-base: 'roboto', sans-serif;
   --font-icon: 'icomoon';
 
   /* Weights */

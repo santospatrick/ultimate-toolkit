@@ -6,15 +6,16 @@ var plumber    = require('gulp-plumber');
 var cache      = require('gulp-cache');
 
 // Packages for CSS
-var lost         = require('lost');
-var nano         = require('cssnano');
-var cssimport    = require('postcss-partial-import');
-var variables    = require('postcss-custom-properties');
-var calc         = require('postcss-calc');
-var media        = require('postcss-custom-media');
-var selectors    = require('postcss-custom-selectors');
-var minmax       = require('postcss-media-minmax');
-var colors       = require('postcss-color-function');
+var lost       = require('lost');
+var nano       = require('cssnano');
+var cssimport  = require('postcss-partial-import');
+var variables  = require('postcss-custom-properties');
+var calc       = require('postcss-calc');
+var media      = require('postcss-custom-media');
+var selectors  = require('postcss-custom-selectors');
+var minmax     = require('postcss-media-minmax');
+var colors     = require('postcss-color-function');
+var styleguide = require('postcss-style-guide');
 
 // Packages for JS
 var webpack       = require('webpack-stream');
@@ -55,7 +56,18 @@ var wtc_docs   = dest + '**/*.html';
 var wtc_fonts  = src_fonts + '/*.+(eot|svg|ttf|woff)';
 var wtc_images = src_images + '/*.+(jpg|jpeg|png)';
 
-var processors = [
+var plugins_dev = [
+  cssimport,
+  variables,
+  calc,
+  media,
+  selectors,
+  minmax,
+  lost,
+  colors
+];
+
+var plugins_prod = [
   cssimport,
   variables,
   calc,
@@ -64,6 +76,12 @@ var processors = [
   minmax,
   lost,
   colors,
+  styleguide({
+    project: 'Gulpack Styleguide',
+    dest: dest + '/styleguide.html',
+    showCode: false,
+    themePath: 'node_modules/psg-theme-1column'
+  }),
   nano({
     autoprefixer: { browsers: [
       'Android >= 2.3',
@@ -86,7 +104,16 @@ var processors = [
 gulp.task('styles', function(){
   return gulp.src(src_css + '/style.css')
     .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
+    .pipe(postcss(plugins_dev))
+    .on('error', handleError)
+    .pipe(sourcemaps.write('map'))
+    .pipe(gulp.dest(dest_css))
+});
+
+gulp.task('styles:prod', function(){
+  return gulp.src(src_css + '/style.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss(plugins_prod))
     .on('error', handleError)
     .pipe(sourcemaps.write('map'))
     .pipe(gulp.dest(dest_css))
@@ -147,4 +174,4 @@ gulp.task('watch', ['browsersync'], function(){
 });
 
 gulp.task('default', ['watch']);
-gulp.task('production', ['styles', 'fonts', 'images']);
+gulp.task('production', ['styles:prod', 'fonts', 'images']);

@@ -1,3 +1,22 @@
+/*
+@styleguide
+ 
+## Buttons
+ 
+Use the button classes on an `<a>`, `<button>`, `<input>` element.
+ 
+<button class="btn-blue">Button</button>
+<button class="btn-red">Button</button>
+<button class="btn-yellow">Button</button>
+<button class="btn-green">Button</button>
+ 
+    <button class="btn-blue">Button</button>
+    <button class="btn-red">Button</button>
+    <button class="btn-yellow">Button</button>
+    <button class="btn-green">Button</button>
+ 
+*/
+
 :--btn{
   position         : relative;
   display          : inline-block;
@@ -24,3 +43,8 @@
 :--btn:--over{
   box-shadow: var(--shadow-highlight); 
 }
+
+.btn-blue   { background-color: var(--brand-primary) }
+.btn-red    { background-color: var(--brand-secundary) }
+.btn-yellow { background-color: var(--brand-tertiary) }
+.btn-green  { background-color: var(--brand-quaternary) }
