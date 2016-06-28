@@ -45,7 +45,7 @@ img{
 }
 
 h1{
-  font-size: var(--space-large);
+  font-size: var(--size-large);
 }
 
 :--heading{
