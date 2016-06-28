@@ -40,21 +40,24 @@ function handleError(err) {
 var src        = 'source/';
 var dest       = 'public/';
 
-var src_css    = src + 'styles';
-var src_js     = src + 'scripts';
-var src_fonts  = src + 'fonts';
-var src_images = src + 'images';
+var src_css     = src + 'styles';
+var src_js      = src + 'scripts';
+var src_fonts   = src + 'fonts';
+var src_images  = src + 'images';
+var src_vectors = src + 'vectors';
 
-var dest_css    = dest + 'styles';
-var dest_js     = dest + 'scripts';
-var dest_fonts  = dest + 'fonts';
-var dest_images = dest + 'images';
+var dest_css     = dest + 'styles';
+var dest_js      = dest + 'scripts';
+var dest_fonts   = dest + 'fonts';
+var dest_images  = dest + 'images';
+var dest_vectors = dest + 'vectors';
 
-var wtc_css    = src_css + '/**/*.css';
-var wtc_js     = src_js + '/**/*.js';
-var wtc_docs   = dest + '**/*.html';
-var wtc_fonts  = src_fonts + '/*.+(eot|svg|ttf|woff)';
-var wtc_images = src_images + '/*.+(jpg|jpeg|png)';
+var wtc_css     = src_css + '/**/*.css';
+var wtc_js      = src_js + '/**/*.js';
+var wtc_docs    = dest + '**/*.html';
+var wtc_fonts   = src_fonts + '/**/*.+(eot|svg|ttf|woff)';
+var wtc_images  = src_images + '/**/*.+(jpg|jpeg|png|gif)';
+var wtc_vectors = src_vectors + '/**/*.svg';
 
 var plugins_dev = [
   cssimport,
@@ -77,8 +80,8 @@ var plugins_prod = [
   lost,
   colors,
   styleguide({
-    project: 'Gulpack Styleguide',
-    dest: dest + '/styleguide.html',
+    project: 'Ultimate Styleguide',
+    dest: dest + 'styleguide/index.html',
     showCode: false,
     themePath: 'node_modules/psg-theme-1column'
   }),
@@ -144,11 +147,7 @@ gulp.task('browsersync', function(){
     server: {
       baseDir: './public'
     },
-    ghostMode: {
-      clicks: true,
-      forms: true,
-      scroll: false
-    },
+    ghostMode: false,
     port: connect_port,
     notify: false,
     reloadOnRestart: false,

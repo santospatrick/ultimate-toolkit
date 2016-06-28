@@ -1,8 +1,8 @@
-# Gulpack
+# Ultimate Toolkit
 
-> This is a Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
+> This is a Toolkit but also a Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!
 
-![Gulpack S2](public/images/presentation.jpg?raw=true "Gulpack S2")
+![Ultimate Toolkit S2](public/images/presentation.jpg?raw=true "Ultimate Toolkit S2")
 
 ## Getting Started
 
@@ -16,7 +16,7 @@
 
 ## Production Build
 
-Run `npm run build` to deploy minified css & javascript
+Run `npm run build` to deploy styleguide, minified css & javascript
 
 ## Gulp Packages
 
@@ -40,12 +40,14 @@ Run `npm run build` to deploy minified css & javascript
 * cssnano
 * lost
 * postcss-calc
+* postcss-color-function
 * postcss-custom-media
 * postcss-custom-properties
 * postcss-custom-selectors
 * postcss-media-minmax
 * postcss-partial-import
-* postcss-color-function
+* postcss-style-guide
+* psg-theme-1column
 
 ## Server Packages
 

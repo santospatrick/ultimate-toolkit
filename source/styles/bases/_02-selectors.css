@@ -3,6 +3,7 @@
 @custom-selector :--icon i[class^='icon-'], i[class*=' icon-'];
 @custom-selector :--over :hover, :focus, :active, .active;
 @custom-selector :--alert [class^='alert-'], [class*=' alert-'];
+@custom-selector :--palette [class^='palette-'], [class*=' palette-'];
 @custom-selector :--grid [class^='grid-'], [class*=' grid-'];
 @custom-selector :--field input[type='text'], textarea, select;
 @custom-selector :--options input[type='checkbox'], input[type='radio'];

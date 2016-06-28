@@ -1,0 +1,42 @@
+/*
+@styleguide
+ 
+## Pallete
+ 
+Use this names as a **suffix** of the **components** to get the colors.
+
+<div style="text-align:center">
+  <div class="palette-primary"><small>-primary</small></div>
+  <div class="palette-secundary"><small>-secundary</small></div>
+  <div class="palette-tertiary"><small>-tertiary</small></div>
+  <div class="palette-quaternary"><small>-quaternary</small></div>
+</div>
+
+*/
+
+:--palette{
+  display: inline-block;
+  width: calc(33% - var(--space-large));
+  margin-right: calc(var(--space-large)/3);
+  margin-bottom: var(--space-base);
+  box-sizing: border-box;
+  padding-top: 150px;
+  border-radius: var(--radius-base);
+  box-shadow: var(--shadow-base);
+  overflow: hidden;
+}
+
+:--palette small{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--space-small) 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Defaults */
+.palette-primary    {background-color: var(--brand-primary)}
+.palette-secundary  {background-color: var(--brand-secundary)}
+.palette-tertiary   {background-color: var(--brand-tertiary)}
+.palette-quaternary {background-color: var(--brand-quaternary)}

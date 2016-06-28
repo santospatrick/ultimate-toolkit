@@ -1,10 +1,10 @@
 {
-  "name": "gulpack",
+  "name": "ultimate-toolkit",
   "version": "1.0.0",
-  "description": "This is a Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!",
+  "description": "This is a Toolkit but also a Boilerplate to use Gulp & Webpack. We consider to use both technologies because projects need to handle images, fonts, css & javascript optimizations. This boilerplate also uses Browser-sync, Postcss & Babel!",
   "main": "index.js",
   "scripts": {
-    "start": "echo welcome to gulpack!",
+    "start": "echo welcome to ultimate-toolkit!",
     "build": "gulp production && webpack -p"
   },
   "author": "Patrick Santos",
