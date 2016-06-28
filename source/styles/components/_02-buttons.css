@@ -5,15 +5,15 @@
  
 Use the button classes on an `<a>`, `<button>`, `<input>` element.
  
-<button class="btn-blue">Button</button>
-<button class="btn-red">Button</button>
-<button class="btn-yellow">Button</button>
-<button class="btn-green">Button</button>
+<button class="btn-primary">Button</button>
+<button class="btn-secundary">Button</button>
+<button class="btn-tertiary">Button</button>
+<button class="btn-quaternary">Button</button>
  
-    <button class="btn-blue">Button</button>
-    <button class="btn-red">Button</button>
-    <button class="btn-yellow">Button</button>
-    <button class="btn-green">Button</button>
+    <button class="btn-primary">Button</button>
+    <button class="btn-secundary">Button</button>
+    <button class="btn-tertiary">Button</button>
+    <button class="btn-quaternary">Button</button>
  
 */
 
@@ -44,7 +44,7 @@ Use the button classes on an `<a>`, `<button>`, `<input>` element.
   box-shadow: var(--shadow-highlight); 
 }
 
-.btn-blue   { background-color: var(--brand-primary) }
-.btn-red    { background-color: var(--brand-secundary) }
-.btn-yellow { background-color: var(--brand-tertiary) }
-.btn-green  { background-color: var(--brand-quaternary) }
+.btn-primary    { background-color: var(--brand-primary) }
+.btn-secundary  { background-color: var(--brand-secundary) }
+.btn-tertiary   { background-color: var(--brand-tertiary) }
+.btn-quaternary { background-color: var(--brand-quaternary) }
