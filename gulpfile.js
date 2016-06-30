@@ -13,6 +13,7 @@ var variables  = require('postcss-custom-properties');
 var calc       = require('postcss-calc');
 var media      = require('postcss-custom-media');
 var selectors  = require('postcss-custom-selectors');
+var fontpath   = require('postcss-fontpath');
 var minmax     = require('postcss-media-minmax');
 var colors     = require('postcss-color-function');
 var styleguide = require('postcss-style-guide');
@@ -67,7 +68,8 @@ var plugins_dev = [
   selectors,
   minmax,
   lost,
-  colors
+  colors,
+  fontpath
 ];
 
 var plugins_prod = [
@@ -79,6 +81,7 @@ var plugins_prod = [
   minmax,
   lost,
   colors,
+  fontpath,
   styleguide({
     project: 'Ultimate Styleguide',
     dest: dest + 'styleguide/index.html',
