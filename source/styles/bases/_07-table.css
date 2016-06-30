@@ -27,7 +27,7 @@ table a{
   color: var(--gray-dark);
 }
 
-@media (--screen-mobile){
+@media (--size-xs){
   table thead{
     display: none;
   }

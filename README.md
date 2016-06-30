@@ -44,6 +44,7 @@ Run `npm run build` to deploy styleguide, minified css & javascript
 * postcss-custom-media
 * postcss-custom-properties
 * postcss-custom-selectors
+* postcss-fontpath
 * postcss-media-minmax
 * postcss-partial-import
 * postcss-style-guide

@@ -4,19 +4,25 @@
   padding-left: var(--space-base);
 }
 
-@media (--screen-small){
+@media (--size-sm){
+  .container{
+    lost-center: 544px;
+  }
+}
+
+@media (--size-md){
   .container{
     lost-center: 768px;
   }
 }
 
-@media (--screen-medium){
+@media (--size-lg){
   .container{
     lost-center: 992px;
   }
 }
 
-@media (--screen-large){
+@media (--size-xl){
   .container{
     lost-center: 1200px;
   }

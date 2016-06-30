@@ -79,41 +79,41 @@ p {
 }
 @font-face {
     font-family: 'roboto', sans-serif;
-    src: url('../fonts/Roboto-Regular-webfont.eot');
-    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    src: url("url(../fonts/Roboto-Regular-webfont.eot).eot");
+    src: url("url(../fonts/Roboto-Regular-webfont.eot).eot?#iefix") format('embedded-opentype'),
+       url("url(../fonts/Roboto-Regular-webfont.eot).woff") format('woff'),
+       url("url(../fonts/Roboto-Regular-webfont.eot).ttf") format('truetype'),
+       url("url(../fonts/Roboto-Regular-webfont.eot).svg") format('svg');
     font-weight: 400;
     font-style: normal
 }
 @font-face {
     font-family: 'roboto', sans-serif;
-    src: url('../fonts/Roboto-Light-webfont.eot');
-    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    src: url("url(../fonts/Roboto-Light-webfont.eot).eot");
+    src: url("url(../fonts/Roboto-Light-webfont.eot).eot?#iefix") format('embedded-opentype'),
+       url("url(../fonts/Roboto-Light-webfont.eot).woff") format('woff'),
+       url("url(../fonts/Roboto-Light-webfont.eot).ttf") format('truetype'),
+       url("url(../fonts/Roboto-Light-webfont.eot).svg") format('svg');
     font-weight: 200;
     font-style: normal
 }
 @font-face {
     font-family: 'roboto', sans-serif;
-    src: url('../fonts/Roboto-Medium-webfont.eot');
-    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    src: url("url(../fonts/Roboto-Medium-webfont.eot).eot");
+    src: url("url(../fonts/Roboto-Medium-webfont.eot).eot?#iefix") format('embedded-opentype'),
+       url("url(../fonts/Roboto-Medium-webfont.eot).woff") format('woff'),
+       url("url(../fonts/Roboto-Medium-webfont.eot).ttf") format('truetype'),
+       url("url(../fonts/Roboto-Medium-webfont.eot).svg") format('svg');
     font-weight: 700;
     font-style: normal
 }
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?p6w75j');
-    src: url('../fonts/icomoon.eot?p6w75j#iefix') format('embedded-opentype'),
-         url('../fonts/icomoon.ttf?p6w75j') format('truetype'),
-         url('../fonts/icomoon.woff?p6w75j') format('woff'),
-         url('../fonts/icomoon.svg?p6w75j#icomoon') format('svg');
+    src: url("url(../fonts/icomoon.eot?p6w75j).eot");
+    src: url("url(../fonts/icomoon.eot?p6w75j).eot?#iefix") format('embedded-opentype'),
+       url("url(../fonts/icomoon.eot?p6w75j).woff") format('woff'),
+       url("url(../fonts/icomoon.eot?p6w75j).ttf") format('truetype'),
+       url("url(../fonts/icomoon.eot?p6w75j).svg") format('svg');
     font-weight: normal;
     font-style: normal
 }
@@ -252,7 +252,7 @@ table a {
     text-decoration: none;
     color: #616161
 }
-@media (max-width: 767px) {
+@media (max-width: 543px) {
     table thead {
         display: none
     }
@@ -420,7 +420,7 @@ i[class*=' icon-'] {
 [class*=' grid-'] .grid-item {
     box-sizing: border-box
 }
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
     /* Basic */
     .grid-2 .grid-item {
         width: calc(99.99% * 1/2 - (20px - 20px * 1/2))
@@ -666,7 +666,7 @@ i[class*=' icon-'] {
         left: calc(99.99% * 7/8 - (20px - 20px * 7/8) + 20px)
     }
 }
-@media  (min-width: 1200px) {
+@media (min-width: 1200px) {
     /* Basic */
     .grid-9 .grid-item {
         width: calc(99.99% * 1/9 - (20px - 20px * 1/9))
@@ -911,7 +911,24 @@ i[class*=' icon-'] {
     display: table;
     clear: both
 }
-@media  (min-width: 768px) {
+@media (min-width: 544px) {
+    .container {
+        *zoom: 1;
+        max-width: 544px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .container:before {
+        content: '';
+        display: table
+    }
+    .container:after {
+        content: '';
+        display: table;
+        clear: both
+    }
+}
+@media (min-width: 768px) {
     .container {
         *zoom: 1;
         max-width: 768px;
@@ -945,7 +962,7 @@ i[class*=' icon-'] {
         clear: both
     }
 }
-@media  (min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         *zoom: 1;
         max-width: 1200px;
@@ -965,7 +982,14 @@ i[class*=' icon-'] {
 .header-home {
     background-color: #bdbdbd
 }
-@media(min-width: 992px) {
+.main-home img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    margin: 15px 0
+}
+@media(min-width: 544px) {
     .main-home {
         padding-bottom: 70px
         /* Footer Height */
@@ -979,7 +1003,7 @@ i[class*=' icon-'] {
     text-align: center;
     color: #616161
 }
-@media (min-width: 992px) {
+@media (min-width: 544px) {
     .footer-home {
         position: absolute;
         left: 0;
@@ -1000,7 +1024,7 @@ i[class*=' icon-'] {
     color: #ececec;
     text-align: center
 }
-@media(max-width: 767px) {
+@media(max-width: 543px) {
     .header-home {
         background-image: linear-gradient(to right, rgba(33, 150, 243, 1) 25%, rgba(244, 67, 54, 1) 25%, rgba(244, 67, 54, 1) 50%, rgba(255, 193, 7, 1) 50%, rgba(255, 193, 7, 1) 75%, rgba(76, 175, 80, 1) 75%, rgba(76, 175, 80, 1) 100%)
     }
@@ -1013,7 +1037,7 @@ i[class*=' icon-'] {
         text-shadow: 0 0 10px rgba(0,0,0,.8)
     }
 }
-@media (min-width: 768px) {
+@media(min-width: 544px) {
     .header-home h1,
 .header-home h2,
 .header-home h3,

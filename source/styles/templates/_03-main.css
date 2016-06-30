@@ -1,4 +1,12 @@
-@media(--screen-medium){
+.main-home img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+@media(--size-sm){
   .main-home{
     padding-bottom: 70px; /* Footer Height */
   }  

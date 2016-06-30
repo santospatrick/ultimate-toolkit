@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-@media(--screen-mobile){
+@media(--size-xs){
   .header-home{
     background-image: linear-gradient(to right, var(--brand-primary) 25%, var(--brand-secundary) 25%, var(--brand-secundary) 50%, var(--brand-tertiary) 50%, var(--brand-tertiary) 75%, var(--brand-quaternary) 75%, var(--brand-quaternary) 100%);
   }
@@ -17,7 +17,7 @@
   }
 }
 
-@media(--screen-small){
+@media(--size-sm){
   .header-home :--heading{
     text-shadow: 
     0 calc(var(--colored-effect-space)*1) var(--brand-primary), 

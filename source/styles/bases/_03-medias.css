@@ -1,4 +1,5 @@
-@custom-media --screen-mobile (width <  768px);
-@custom-media --screen-small  (width >= 768px);
-@custom-media --screen-medium (width >= 992px);
-@custom-media --screen-large  (width >= 1200px);
+@custom-media --size-xs (width <  544px);
+@custom-media --size-sm (width >= 544px);
+@custom-media --size-md (width >= 768px);
+@custom-media --size-lg (width >= 992px);
+@custom-media --size-xl (width >= 1200px);
