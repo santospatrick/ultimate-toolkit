@@ -56,7 +56,7 @@ var dest_vectors = dest + 'vectors';
 var wtc_css     = src_css + '/**/*.css';
 var wtc_js      = src_js + '/**/*.js';
 var wtc_docs    = dest + '**/*.html';
-var wtc_fonts   = src_fonts + '/**/*.+(eot|svg|ttf|woff)';
+var wtc_fonts   = src_fonts + '/**/*.+(eot|svg|ttf|woff|woff2)';
 var wtc_images  = src_images + '/**/*.+(jpg|jpeg|png|gif)';
 var wtc_vectors = src_vectors + '/**/*.svg';
 
@@ -145,6 +145,11 @@ gulp.task('images', function(){
     .pipe(gulp.dest(dest_images))
 });
 
+gulp.task('vectors', function(){
+  return gulp.src(wtc_vectors)
+    .pipe(gulp.dest(dest_vectors))
+});
+
 gulp.task('browsersync', function(){
   browsersync.init({
     server: {
@@ -172,8 +177,9 @@ gulp.task('watch', ['browsersync'], function(){
   gulp.watch(wtc_js, ['webpack', reload]);
   gulp.watch(wtc_fonts, ['fonts', reload]);
   gulp.watch(wtc_images, ['images', reload]);
+  gulp.watch(wtc_vectors, ['vectors', reload]);
   gulp.watch(wtc_docs, reload);
 });
 
 gulp.task('default', ['watch']);
-gulp.task('production', ['styles:prod', 'fonts', 'images']);
+gulp.task('production', ['styles:prod', 'fonts', 'images', 'vectors']);
