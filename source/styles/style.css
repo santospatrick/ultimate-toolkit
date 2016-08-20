@@ -1,5 +1,5 @@
-@import 'bases/bases';
-@import 'components/components';
-@import 'modules/modules';
-@import 'templates/templates';
-@import 'pages/pages';
+@import 'bases/**/*';
+@import 'components/**/*';
+@import 'modules/**/*';
+@import 'templates/**/*';
+@import 'pages/**/*';

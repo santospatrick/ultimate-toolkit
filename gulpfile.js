@@ -8,7 +8,7 @@ var cache      = require('gulp-cache');
 // Packages for CSS
 var lost       = require('lost');
 var nano       = require('cssnano');
-var cssimport  = require('postcss-partial-import');
+var cssimport  = require('postcss-easy-import')({prefix: '_', glob: true});
 var variables  = require('postcss-custom-properties');
 var calc       = require('postcss-calc');
 var media      = require('postcss-custom-media');
@@ -182,4 +182,4 @@ gulp.task('watch', ['browsersync'], function(){
 });
 
 gulp.task('default', ['watch']);
-gulp.task('production', ['styles:prod', 'fonts', 'images', 'vectors']);
+gulp.task('production', ['styles:prod', 'fonts', 'images']);
